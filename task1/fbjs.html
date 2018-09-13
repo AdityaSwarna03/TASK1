@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook-log in or sign up</title>
+<style type="text/css">
+#head
+{
+position:absolute;
+top:16px;
+left:170px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 40px;
+font-weight: 800;
+height: 50px;
+width:170px;
+color:white;
+}
+#in1{
+left:750px;
+top:20px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+position:absolute;
+color:white;
+}
+#in2
+{
+left:920px;
+top:20px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+position:absolute;
+color:white;
+}
+#in3{
+left:920px;
+top:70px;
+position:absolute;
+color:white;
+cursor: pointer;
+direction: ltr;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 16.0833px;
+outline-color: rgb(156, 180, 216);
+outline-style: none;
+outline-width: 0px;
+text-align: left;
+text-decoration: none;
+text-decoration-color: rgb(156, 180, 216);
+text-decoration-line: none;
+text-decoration-style: solid;
+}
+#btn1{
+left:1080px;
+top:35px;
+background-color: rgb(66, 103, 178);
+border-bottom-color: rgb(41, 72, 125);
+border-bottom-left-radius: 2px;
+border-bottom-right-radius: 2px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(41, 72, 125);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(41, 72, 125);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(41, 72, 125);
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+border-top-style: solid;
+border-top-width: 1px;
+color: white;
+cursor: pointer;
+direction: ltr;
+display: inline-block;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 18px;
+padding-bottom: 2px;
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 2px;
+text-align: center;
+text-decoration: none;
+text-decoration-color: rgb(102, 102, 102);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-shadow: none;
+vertical-align: top;
+white-space: nowrap;
+position:absolute;
+border-left:0px;
+border-right:0px;
+border-top:0px;
+border-bottom:0px;
+}
+#btn
+{
+color:white;
+letter-spacing: normal;
+text-rendering: optimizelegibility;
+background-color:green;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgb(105, 167, 78);
+background-image: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
+background-origin: padding-box;
+background-position: 0% 0%;
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-size: auto auto;
+border-bottom-color: rgb(44, 81, 21);
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(59, 110, 34);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(59, 110, 34);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(59, 110, 34);
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-style: solid;
+border-top-width: 1px;
+box-shadow: rgb(164, 227, 136) 0px 1px 1px 0px inset;
+color: rgb(255, 255, 255);
+left:0px;
+top:315px;/*it is based on our division*/
+font-size:25px;
+margin:0px 0px 0px 0px;
+height:35px;
+width:175px;
+}
+a{
+text-decoration:none;
+}
+a:hover{
+text-decoration:underline;
+}
+#cont1{
+margin-left:0px;
+margin-top:0px;
+height:95px;
+background-color: #365899;
+margin:0;
+padding:0;
+}
+body
+{
+margin-left:0px;
+margin-top:0px;
+height:700px;
+background:linear-gradient(to bottom right,white,#bcbdc4);
+margin: 0;
+padding: 0;
+}
+#head1{
+left:60px;
+top:150px;
+position:absolute;
+color:#000080;
+border:100px;
+}
+#img1{
+left:60px;
+top:220px;
+position:absolute;
+}
+#head2{
+left:685px;
+top:100px;
+position:absolute;
+color: rgb(29, 33, 41);
+direction: ltr;
+font-family: "Freight Sans Bold", Helvetica, Arial, sans-serif;
+font-size: 40px;
+
+}
+#head3
+{
+left:683px;
+top:160px;
+font-size:20px;
+position:absolute;
+color: rgb(75, 79, 86);
+direction: ltr;
+font-family: "Freight Sans", Helvetica, Arial, sans-serif;
+font-size: 22px;
+font-weight: 400;
+letter-spacing: normal;
+line-height: 28px;
+}
+#birth{
+left:170px;
+top:185px;
+font-size:13px;
+position:absolute;
+}
+#one
+{
+left:0px;
+top:155px;
+color: rgb(29, 33, 41);
+direction: ltr;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 24.1167px;
+margin-bottom: 5px;
+margin-top: 10px;
+position:absolute;
+}
+#but
+{
+left:0px;
+top:230px;
+position:absolute;
+}
+#p1{
+left:0px;
+top:260px;
+position:absolute;
+font-family:Helvetica,Arial, sans-serif;
+font-size: 12px;
+margin-bottom: 11px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 11px;
+width: 316px;
+}
+#p2{
+left:0px;
+top:365px;
+position:absolute;
+}
+#s1{
+left:0px;
+top:190px;
+width:50px;
+position:absolute;
+}
+#s2{
+left:47px;
+top:190px;
+position:absolute;
+width:60px;
+}
+#s3{
+left:103px;
+top:190px;
+position:absolute;
+width:65px;
+}
+#f1
+{
+left:690px;
+top:230px;
+position:absolute;
+}
+#foot{
+left:30px;
+top:700px;
+position:absolute;
+color: rgb(54, 88, 153);
+cursor: pointer;
+direction: ltr;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 15px;
+line-height: 19.2px;
+list-style-type: none;
+margin-right: 0px;
+margin-left:100px;
+text-decoration: none;
+text-decoration-color: rgb(54, 88, 153);
+text-decoration-line: none;
+text-decoration-style: solid;
+white-space: nowrap;
+width:770px;
+height:200px;
+}
+#im1{
+margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid #08298A;
+ height:35px;
+ padding-left:3px;
+}
+#im2{
+margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid #08298A;
+ height:35px;
+ padding-left:3px;
+}
+
+</style>
+</head>
+<body>
+<script>
+function fn()
+{
+console.log("Logged in Successfully");
+}
+</script>
+<div id="cont1">
+<a href="https://www.facebook.com"><h1 id="head">facebook</h1></a>
+<form>
+<div id="in1">Email or Phone<br/><input id="im1"size="10"style="height:15px;"type="text"  name="Email or Phone"><br/></div>
+<div id="in2">Password<br/><input id="im2"size="10"type="password"style="height:15px;" name="Password"><br/></div>
+<div id="in3"> <a style="color:white"href="https://www.facebook.com/login/identify?ctx=recover&lwv=110&ars=royal_blue_bar">forgotten account?</a></br></div>
+<a><input id="btn1" type="button"onclick="fn()"value="Log In"></a>
+</div>
+<div id="cont2">
+<h3 id="head1">Facebook helps you connect and share with the<br/>people in your life</h3>
+<br/>
+<img id="img1"src="image1.png" alt="GLOBAL CONNECTIVITY">
+<br/>
+<h1 id="head2">Create an account</h1><br/>
+<p id="head3">It's free and always will be.</p>
+<br/>
+<div id="f1">
+<form >
+<input style="height:25px;font-size:20px;"size="10"name="First name"type="text" placeholder="First name">
+<input  style="height:25px;font-size:20px;"size="10"name="Surname" type="text" placeholder="Surname">
+<br/><br/>
+<input  style="height:25px;font-size:20px;"size="28"name="Mobile number or email address"type="email" type="number" placeholder="Mobile number or email address">
+<br/><br/>
+<input  style="height:25px;font-size:20px;"name="New password"size="28" type="password" placeholder="New password">
+<br/><br/>
+
+<div id="one">Birthday</div><br/><br/><select id="s2"name="MonthG">
+<option Value="1">Jan
+<option Value="2">Feb
+<option Value="3">Mar
+<option Value="4">Apr
+<option Value="5">May
+<option Value="6">June
+<option Value="7">July
+<option Value="8">Aug
+<option Value="9">Sept
+<option Value="10">Oct
+<option Value="11">Nov
+<option Value="12">Dec
+</select>
+<select id="s1"name="DateG">
+<option Value="1">1
+<option Value="2">2
+<option Value="3">3
+<option Value="4">4
+<option Value="5">5
+<option Value="6">6
+<option Value="7">7
+<option Value="8">8
+<option Value="9">9
+<option Value="10">10
+<option Value="11">11
+<option Value="12">12
+<option Value="13">13
+<option Value="14">14
+<option Value="15">15
+<option Value="16">16
+<option Value="17">17
+<option Value="18">18
+<option Value="19">19
+<option Value="20">20
+<option Value="21">21
+<option Value="22">22
+<option Value="23">23
+<option Value="24">24
+<option Value="25">25
+<option Value="26">26
+<option Value="27">27
+<option Value="28">28
+<option Value="29">29
+<option Value="30">30
+<option Value="31">31
+</select>
+<select id="s3" name="YearG">
+<option value="1">1990
+<option value="2">1991
+<option value="3">1992
+<option value="4">1993
+<option value="5">1994
+<option value="6">1995
+<option value="7">1996
+<option value="8">1997
+<option value="9">1998
+<option value="10">1999
+<option value="11">2000
+<option value="12">2001
+<option value="13">2002
+<option value="14">2003
+<option value="15">2004
+<option value="16">2005
+<option value="17">2006
+<option value="18">2007
+<option value="19">2008
+<option value="20">2009
+<option value="21">2010
+<option value="22">2011
+<option value="23">2012
+<option value="24">2013
+<option value="25">2014
+<option value="26">2015
+<option value="27">2016
+<option value="28">2017
+<option value="29">2018
+</select>
+<div class="dropdown"><a id="birth"href=""><small>why do i need to provide my <br/>date of birth?</small></a><br/><br/>
+<div id="but"><input type="radio" name="gender" value="Female">Female<input type="radio" name="gender" value="male">Male</div>
+<br/><br/>
+<p id="p1" style="font-style:normal;" ><small>By clicking Sign Up you agree to our <a href="https://www.facebook.com/legal/terms/update"><small>Terms</small></a>,<a href="https://www.facebook.com/about/privacy/update"><small>Data Policy</small></a> and<br/>
+<a href="https://www.facebook.com/policies/cookies/"><small>Cookie Policy</small></a>.You may receive SMS notifications from us and<br/>
+can opt out at any time.</small></p>
+<br/>
+<p id="p2"><a href="https://www.facebook.com/pages/creation/?ref_type=registration_form">Create a page</a> for a celebrity band or business</a></p>
+<br/>
+<button id="btn">Sign Up</button>
+</form>
+</div>
+</div>
+<div id="foot">
+<br/><br/><br/>
+<pre style="font-type:normal"><small><a href="">ENGLISH(UK)</a> <a lang="ta"href="https://ta-in.facebook.com/">TAMIL</a> <a lang="te" href="https://te-in.facebook.com/">TELUGU</a> <a href="https://kn-in.facebook.com/">KANNADA</a> <a href="https://ur-pk.facebook.com/">URDU</a> <a href="https://hi-in.facebook.com/">HINDI</a> <a href= "https://ml-in.facebook.com/">MALAYALAM</a> <a href="https://si-lk.facebook.com/">SINHALESE</a> <a href="https://pa-in.facebook.com/">PUNJABI</a> <a href="https://bn-in.facebook.com/">BANGLA</a> <a href="https://gu-in.facebook.com/">GUJARATHI</a> <a href="https://www.facebook.com/#">+</a>
+</small></pre>
+<br/><hr/>
+<pre style="font-type:normal"><small><a href="https://www.facebook.com/r.php">Sign Up</a>  <a href="https://www.facebook.com/login/">Log In</a>  <a href="https://www.facebook.com/login/">Messenger</a>  <a href="https://www.facebook.com/lite/">Facebook L`ite</a>  <a href="https://www.facebook.com/mobile/?ref=pf">Mobile</a>  <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Ffriends%2Frequests%2F%3Ffcref%3Dffi">Find Friends</a>  <a href="https://www.facebook.com/directory/people_sizes/">People</a>  <a href="https://www.facebook.com/directory/pages_variations/">Pages</a>  <a href="https://www.facebook.com/directory/videos/interests/">Video interests</a>   <a href="https://www.facebook.com/places/">Places</a>  <a href="https://www.facebook.com/games/">Games</a>  <a href="https://www.facebook.com/directory/places/">Locations</a>  <a href="https://www.facebook.com/directory/marketplace/">Marketplace</a>  <a href="https://www.facebook.com/directory/groups/">Groups</a>  <br/>       <a href="https://www.instagram.com/">Instagram</a>  <a href="https://www.facebook.com/local/lists/245019872666104/">Local</a>  <a href="https://www.facebook.com/facebook">About</a>  <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fcreate%2F%3Fcampaign_id%3D402047449186%26placement%3Dpflo%26extra_1%3Dnot-admgr-user">Create ad</a>  <a href="https://www.facebook.com/pages/creation/?ref_type=sitefooter"> Create page</a>   <a href="https://developers.facebook.com/?ref=pf">Developers</a>  <a href="https://www.facebook.com/careers/?ref=pf">Careers</a>  <a href="https://www.facebook.com/privacy/explanation">Privacy</a>  <a href="https://www.facebook.com/policies/cookies/">Cookies</a>   <a href="https://www.facebook.com/help/568137493302217">AdChoices</a>  <a href="https://www.facebook.com/policies?ref=pf">Terms</a>  <a href="https://www.facebook.com/help/?ref=pf">Help</a><br/></pre>
+
+Facebook © 2018
+</div>
+</html>
+
